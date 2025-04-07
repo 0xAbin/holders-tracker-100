@@ -69,7 +69,8 @@ pub fn fetch_top_holders(token_address: &str) {
         sleep(Duration::from_secs(1)); 
     }
 
-    let filename = format!("top_holders_{}.csv", &token_address[..6]);
+    std::fs::create_dir_all("EthereumMainnet").unwrap();
+    let filename = format!("{}.csv", &token_address[..42]);
     let mut file = File::create(filename).unwrap();
     file.write_all(rows.join("\n").as_bytes()).unwrap();
 

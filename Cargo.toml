@@ -3,6 +3,15 @@ name = "holders-tracker-100"
 version = "0.1.0"
 edition = "2024"
 
+# [[bin]]
+# name = "generate_data"
+# path = "src/generate_data.rs"
+
+# [[bin]]
+# name = "addresstoone"
+# path = "src/addresstoone.rs"
+
+
 [dependencies]
 reqwest = { version = "0.11", features = ["blocking"] }
 scraper = "0.17"

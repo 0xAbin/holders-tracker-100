@@ -3,8 +3,8 @@ use std::io::{BufRead, BufReader, Write};
 use std::collections::HashSet;
 
 fn main() {
-    let dir_path = "BaseMainet";
-    let output_file = "Base_address_Token.csv";
+    let dir_path = "ArbitrumMainet";
+    let output_file = "Arbitrum_address_Token.csv";
     let mut all_addresses = HashSet::new();
 
   

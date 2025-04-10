@@ -9,7 +9,7 @@ fn main() {
     let addresses = data::get_eth_addresses();
 
     for token_address in addresses {
-        let file_path = format!("BaseMainnet/{}.csv", &token_address[..42]);
+        let file_path = format!("ArbitrumMainet/{}.csv", &token_address[..42]);
 
         if Path::new(&file_path).exists() {
             println!("✅ Skipping (already processed): {}", token_address);

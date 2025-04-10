@@ -7,9 +7,9 @@ edition = "2024"
 # name = "generate_data"
 # path = "src/generate_data.rs"
 
-# [[bin]]
-# name = "addresstoone"
-# path = "src/addresstoone.rs"
+[[bin]]
+name = "addresstoone"
+path = "src/addresstoone.rs"
 
 
 [dependencies]
